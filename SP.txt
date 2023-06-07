@@ -1,0 +1,29 @@
+SP:
+CreateAppointment
+PatientAppointmentsView
+Cancel Appointment
+DoctorAppointmentsView
+Create NewAppointment
+AddAppointmentResult
+AddMedicationtoPrescription
+PharmacistMedicineInquiry
+PatientPassed
+GetDiagnoses
+BringDoctors
+DoctorIDBring
+DoctorNameBring
+BringHospitals
+BringClinics
+FillDoctors
+AddLab
+BringTests
+BringMedicines
+BringPatients
+PatientRegister
+BringPatientID
+BringPatientName
+BringPharmacists
+CreateReceipt
+CheckSessions
+BringSessionNames
+BringFullSessions

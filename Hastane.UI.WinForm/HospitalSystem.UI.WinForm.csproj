@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8489A5EE-82F7-492A-B25B-AF169431AF48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hastane.UI.WinForm</RootNamespace>
+    <AssemblyName>Hastane.UI.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder_ambulance_45490.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorLogin.Designer.cs">
+      <DependentUpon>DoctorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorOperationScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorOperationScreen.Designer.cs">
+      <DependentUpon>DoctorOperationScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacistLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PharmacistLogin.Designer.cs">
+      <DependentUpon>PharmacistLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacistOperationScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>PharmacistOperationScreen.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientAppointment.Designer.cs">
+      <DependentUpon>PatientAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medication.Designer.cs">
+      <DependentUpon>Medication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientAppointmentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientAppointmentScreen.Designer.cs">
+      <DependentUpon>PatientAppointmentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientLoginRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientLoginRegister.Designer.cs">
+      <DependentUpon>PatientLoginRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAppointment.Designer.cs">
+      <DependentUpon>NewAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorLogin.resx">
+      <DependentUpon>DoctorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorOperationScreen.resx">
+      <DependentUpon>DoctorOperationScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistLogin.resx">
+      <DependentUpon>PharmacistLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistOperationScreen.resx">
+      <DependentUpon>PharmacistOperationScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientAppointment.resx">
+      <DependentUpon>PatientAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medication.resx">
+      <DependentUpon>Medication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientAppointmentScreen.resx">
+      <DependentUpon>PatientAppointmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientLoginRegister.resx">
+      <DependentUpon>PatientLoginRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAppointment.resx">
+      <DependentUpon>NewAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hastane.DTO\HospitalSystem.DTO.csproj">
+      <Project>{6ac913be-5bf3-434f-8b4a-7993d6bcb760}</Project>
+      <Name>HospitalSystem.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hastane.Entities\HospitalSystem.Entities.csproj">
+      <Project>{bb0d3fbe-2afa-4b35-ac98-f59c1b65f775}</Project>
+      <Name>HospitalSystem.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HastaneSistemi.BLL\HospitalSystem.BLL.csproj">
+      <Project>{d3175e4a-ab50-474c-9f94-4d025df556d1}</Project>
+      <Name>HospitalSystem.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconfinder_ambulance_45490.ico" />
+    <Content Include="Images\iconfinder_11_-_Valid_1815560 %281%29.png" />
+    <Content Include="Images\iconfinder_12_-_Plus_1815561 %281%29.png" />
+    <Content Include="Images\iconfinder_ambulance_45490.ico" />
+    <Content Include="Images\iconfinder_calendar-event-planning_2932351.ico" />
+    <Content Include="Images\iconfinder_Delete_1493279.png" />
+    <Content Include="Images\iconfinder_doctor_63121.ico" />
+    <Content Include="Images\iconfinder_doctor_63121.png" />
+    <Content Include="Images\iconfinder_JD-27_2246843.png" />
+    <Content Include="Images\iconfinder_Login Manager_3503.ico" />
+    <Content Include="Images\iconfinder_Login Manager_3503.png" />
+    <Content Include="Images\iconfinder_login_59378.png" />
+    <Content Include="Images\iconfinder_Pharmacist_Female_Light_80878 %282%29.png" />
+    <Content Include="Images\iconfinder_Pharmacist_Female_Light_80878.ico" />
+    <Content Include="Images\iconfinder_Search_3213447 %281%29.png" />
+    <Content Include="Images\iconfinder_Search_3213447.png" />
+    <Content Include="Images\iconfinder_Syrup_2415599 %281%29.png" />
+    <Content Include="Images\iconfinder__3ui_2303108.ico" />
+    <Content Include="Images\iconfinder__3ui_2303108.png" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\saglik-bakanligi-logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
